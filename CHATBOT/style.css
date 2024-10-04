@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#35771b, #ccffcc);
+    margin: 0;
+    padding: 0;
+  }
+
+  .chat-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .chat-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .chat-body {
+    padding: 20px;
+    height: 400px;
+    overflow-y: scroll;
+  }
+
+  .chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .user {
+    background-color: #f1f1f1;
+    text-align: right;
+  }
+
+  .assistant {
+    background-color: #e6f7ff;
+    text-align: left;
+  }
+
+  .chat-input {
+    display: flex;
+    padding: 10px;
+  }
+
+  .chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .chat-input button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .button-option {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  header nav ul li a:hover{
+    border: none;
+    background-color: rgb(0, 124, 128);
+   color: white;
+   border-radius: 2px;
+   margin: 5px;
+   padding: 10px 15px;
+   font-family:  Roboto;
+
+     }
+     .accueil-link {
+      border: none;
+      background-color: rgb(0, 124, 128);
+      color: white;
+      border-radius: 2px;
+      margin: 5px;
+      padding: 10px 15px;
+      font-family: Roboto;
+  }

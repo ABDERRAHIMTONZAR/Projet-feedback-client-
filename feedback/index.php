@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedbacK Engine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
+
+
+    <!-- Style personnalisé -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+    <style>
+        header nav ul li a:hover {
+            background-color: rgb(0, 124, 128);
+            color: white;
+            border-radius: 2px;
+            margin: 5px;
+            padding: 10px 15px;
+            font-family: Roboto;
+        }
+
+        .accueil-link {
+            background-color: rgb(0, 124, 128);
+            color: white;
+            border-radius: 2px;
+            margin: 5px;
+            padding: 10px 15px;
+            font-family: Roboto;
+        }
+
+        .agileinfo {
+            width: 50%;
+        }
+    </style>
+</head>
+<body class="agileits_w3layouts">
+<header>
+            <nav class="navbar navbar-expand-lg navbar-light static-top">
+                <div class="container">
+                    <!-- Logo à gauche -->
+                    <a href="#">
+                        <img src="images/MSS LOGO V2.png" alt="..." height="80">
+                    </a>
+                    <!-- Bouton de basculement pour le menu responsive -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Menu à droite -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item hover">
+                                <a class="nav-link active" href="../acceuil" aria-current="page"
+                                    style="color: white;">ACCUEIL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active accueil-link" href="../feedback" style="color: white;">DONNER SON AVIS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../feedback/admin"
+                                    style="color: white;">ADMINISTRATION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../CHATBOT/chat.php" style="color: white;">SUPPORT
+                                    CLIENT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    <h1 class="agile_head text-center">Feedback Form</h1>
+    <div class="w3layouts_main wrap">
+        <h3>Aidez-nous à mieux vous servir en prenant quelques minutes.</h3>
+        <form action="feedback.php" method="post" class="agile_form">
+            <h2>À quel point êtes-vous satisfait de notre service?</h2>
+            <ul class="agile_info_select">
+                <li>
+                    <input type="radio" name="view" value="excellent" id="excellent" required>
+                    <label for="excellent">Excellent</label>
+                    <div class="check w3"></div>
+                </li>
+                <li>
+                    <input type="radio" name="view" value="bon" id="bon">
+                    <label for="bon">Bon</label>
+                    <div class="check w3ls"></div>
+                </li>
+                <li>
+                    <input type="radio" name="view" value="neutre" id="neutre">
+                    <label for="neutre">Neutre</label>
+                    <div class="check wthree"></div>
+                </li>
+                <li>
+                    <input type="radio" name="view" value="mauvais" id="mauvais">
+                    <label for="mauvais">Mauvais</label>
+                    <div class="check w3_agileits"></div>
+                </li>
+            </ul>
+            <h2>Si vous avez des commentaires spécifiques, veuillez nous écrire...</h2>
+            <textarea placeholder="Commentaires supplémentaires" class="w3l_summary" name="comments" required></textarea>
+            <input type="text" placeholder="Votre nom (facultatif)" name="name" />
+            <input type="email" placeholder="Votre email (facultatif)" name="email" />
+            <input type="text" placeholder="Votre numéro (facultatif)" name="num" /><br>
+            <center><input type="submit" value="Soumettre " class="agileinfo"></center>
+        </form>
+    </div>
+    <div class="agileits_copyright text-center">
+        <p>© 2024 </p>
+    </div>
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-OERcA2knkzJSFprnhl6Y9N6c9LpE9z3BTETsli+QFpSfFZiw5L3f4NE0YyQ2v5wz" crossorigin="anonymous">
+    </script>
+</body>
+</html>
