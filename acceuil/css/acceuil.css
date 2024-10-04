@@ -43,23 +43,23 @@
 
 header nav ul li a:hover{
   border: none;
-  background-color: rgb(0, 124, 128);
+  background-color: rgba(0, 0, 0, 0.267);
  color: white;
- border-radius: 2%;
+ border-radius: 10%;
  margin: 5px;
  padding: 10px 15px;
- font-family:  Roboto;
+
 
 
    }
    .accueil-link {
     border: none;
-    background-color: rgb(0, 124, 128);
+    background-color: rgba(0, 0, 0, 0.267);
     color: white;
-    border-radius: 2px;
+    border-radius: 10px;
     margin: 5px;
     padding: 10px 15px;
-    font-family: Roboto;
+  
 }
 .container {
   overflow: hidden; /* Empêche le débordement lors de l'animation */

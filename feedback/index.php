@@ -20,21 +20,21 @@
 
     <style>
         header nav ul li a:hover {
-            background-color: rgb(0, 124, 128);
+            background-color: rgba(0, 0, 0, 0.267);
             color: white;
-            border-radius: 2px;
+            border-radius: 10px;
             margin: 5px;
             padding: 10px 15px;
-            font-family: Roboto;
+           
         }
 
         .accueil-link {
-            background-color: rgb(0, 124, 128);
+            background-color: rgba(0, 0, 0, 0.267);
             color: white;
-            border-radius: 2px;
+            border-radius: 10px;
             margin: 5px;
             padding: 10px 15px;
-            font-family: Roboto;
+           
         }
 
         .agileinfo {
@@ -80,7 +80,7 @@
             </nav>
         </header>
 
-    <h1 class="agile_head text-center">Feedback Form</h1>
+    <h1 class="agile_head text-center">Feedback </h1>
     <div class="w3layouts_main wrap">
         <h3>Aidez-nous à mieux vous servir en prenant quelques minutes.</h3>
         <form action="feedback.php" method="post" class="agile_form">

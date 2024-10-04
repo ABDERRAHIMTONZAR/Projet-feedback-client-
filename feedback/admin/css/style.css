@@ -74,16 +74,18 @@ body {
   padding: 2em;
 }
 .log-form h2 {
-  color: #5d5d5d;
+  color: #008000;;
   font-family: 'open sans condensed';
-  font-size: 1.35em;
+  font-size:22px;
   display: block;
-  background: #2a2a2a;
+  /* background-color: #008000; */
+  /* background: #369994; */
+  /* background-color: rgb(0, 124, 128); */
   width: 100%;
   text-transform: uppercase;
   padding: 0.75em 1em 0.75em 1.5em;
   box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.05);
-  border: 1px solid #1d1d1d;
+font-family: bold;
   margin: 0;
   font-weight: 200;
 }
@@ -96,7 +98,7 @@ body {
   border: none;
   border-bottom: 1px solid #eaeaea;
   padding-bottom: 1.25em;
-  color: #757575;
+  color: GREY;
 }
 .log-form input:focus {
   outline: none;
@@ -133,4 +135,10 @@ body {
 }
 .log-form .forgot:hover {
   color: #1ba0a9;
+  
+}
+
+.bouton {
+  background-color: #2daa2d;;
+color: white;
 }

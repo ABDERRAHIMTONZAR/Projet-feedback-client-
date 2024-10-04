@@ -13,6 +13,7 @@ CREATE TABLE `reviews` (
   `user_id` INT(11) NOT NULL,
   `feedback` TEXT NOT NULL,
   `suggestions` TEXT NOT NULL,
+  `status` ENUM('treated', 'untreated') NOT NULL DEFAULT 'untreated',  -- Ajout de la colonne status
   PRIMARY KEY (`id`),
   FOREIGN KEY (`user_id`) REFERENCES `users`(`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -27,6 +28,6 @@ CREATE TABLE `admins` (
 
 -- Insérer un administrateur par défaut
 INSERT INTO `admins` (`id`, `email`, `password`) VALUES
-(1, 'admin@admin.com', 'admin');
+(1, 'admin@admin.com', 'a');
 
 
