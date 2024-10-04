@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
+        <head>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+          </head>
+          
+    <link rel="stylesheet" href="css/acceuil.css">
+    <title>Document</title>
+
+
+
+
+    <script>
+        // Attendre que le document soit prêt
+        $(document).ready(function () {
+            // Fonction pour déplacer l'image
+            function moveImage() {
+                // Animation pour déplacer l'image à droite
+                $('.myImage').animate({ top: '+=7%' }, 1000, function () {
+                    // Animation terminée, réinitialiser la position
+                    $('.myImage').css('top', '3%');
+                });
+            }
+
+            // Appeler la fonction moveImage après un délai de 1 seconde
+
+            setInterval(moveImage, 2000); // Répéter toutes les 2 secondes (2000 ms)
+        });
+    </script>
+</head>
+<style>
+     .myImage {
+            position: relative;
+           top: 3%;
+        }
+
+
+        .social-icons i {
+            color: #fff;
+        }
+
+        .social-icons a:hover i {
+            color: #007bff;
+        }
+    
+</style>
+<body>
+
+   <div style="background-image:url(photos/green.jpg);"  class="baground">
+
+       
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light static-top">
+                <div class="container">
+                    <!-- Logo à gauche -->
+                    <a href="#">
+                        <img src="photos/MSS LOGO V2.png" alt="..." height="80">
+                    </a>
+                    <!-- Bouton de basculement pour le menu responsive -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Menu à droite -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item hover">
+                                <a class="nav-link active accueil-link" href="#acceuil.html" aria-current="page"
+                                    style="color: white;">ACCUEIL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../feedback" style="color: white;">DONNER SON AVIS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../feedback/admin"
+                                    style="color: white;">ADMINISTRATION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../CHATBOT/chat.php" style="color: white;">SUPPORT
+                                    CLIENT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <br><br><br>
+
+        <!-- Bienvenue -->
+        <!-- <div class="parent">
+            <div class="row">
+                <div class="col-md-6 partie1">
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <img src="Logo-TP-Blanc.png" class="img-fluid" style="width: 40%;" alt="Logo">
+                        <h1 class="custom-title" style="color: white;">Bienvenue sur la Plateforme de <br><span
+                                class="title">Feedback Client</span></h1>
+                        <h2 class="subtitle" style="color: white; font-size: 18px;">Votre voix compte ! Nous valorisons vos avis et suggestions.</h2>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column-reverse bd-highlight partie2">
+                    <img src="Design-sans-titre-9.png" class="img-fluid" alt="" style="max-height: 400px;">
+                </div>
+            </div>
+        </div>
+        <br> <br><br>
+        </div><br><br> -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mb-4 text-center partie1">
+                    <!-- <img src="photos/MSS LOGO V2.png" class="img-fluid" style="width: 20%;" alt="Logo"><br><br> -->
+                    <br><br><h2 class="custom-title" style="color: white;">Bienvenue sur la Plateforme de <br><span
+                            class="title text-center display-1 ">Feedback Client</span></h2>
+                    <h2 class="subtitle" style="color: white; font-size: 18px;">Votre voix compte ! Nous valorisons vos
+                        avis et suggestions.</h2>
+
+                </div>
+                <div class="col-md-5 mb-4 ">
+                    <img src="photos/Design-sans-titre-9.png" class="img-fluid myImage  " alt="#" style="margin-left: 10%;" >
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div><br><br>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Objectifs de la plateforme: -->
+    <section>
+        <h3 class="display-6 fw-bolder text-primary3 text-center" style="font-family:Roboto ;">Objectifs de la
+            plateforme:</h3>
+        <br>
+        <div class="parent1">
+            <div class="item1 text-center">
+                <img src="photos/comprendre.png" alt=""><br>
+                <h3 style="font-family: roboto;">Comprendre vos besoins</h3>
+                <p class="custom-paragraph">Grâce à vos retours, nos équipes peuvent analyser en profondeur vos
+                    attentes, vos usages et vos douleurs. Cela nous permet de mieux cerner les améliorations à apporter
+                    à nos produits et services pour répondre au plus près à vos exigences.</p>
+            </div>
+            <div class="item2 text-center">
+                <img src="photos/amelioration-continue.png" alt=""><br>
+                <h3 style="font-family: roboto;">Améliorer en continu</h3>
+                <p class="custom-paragraph">Nous nous engageons à une amélioration constante de nos produits et
+                    services. Vos retours sont essentiels pour guider notre évolution et assurer que nous répondons
+                    toujours mieux à vos besoins.</p>
+            </div>
+            <div class="item3 text-center">
+                <img src="photos/lengagement-des-clients.png" alt=""><br>
+                <h3 style="font-family: roboto;">Favoriser l'Engagement Client
+                </h3>
+                <p class="custom-paragraph">Nous nous engageons à favoriser la fidélité de nos clients en leur offrant
+                    une expérience exceptionnelle à chaque interaction. Vos retours sont essentiels pour guider notre
+                    évolution et assurer que nous répondons toujours mieux à vos attentes. En cultivant une relation de
+                    confiance et en améliorant continuellement nos services, nous visons à créer une connexion durable
+                    et mutuellement bénéfique.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+     <!--Témoignages de Nos Clients:
+ < -->
+ <script>$(document).ready(function() {
+    function animateCards() {
+        $('.testimonial-card').each(function(index) {
+            var $this = $(this);
+            var distance = index % 2 === 0 ? '+=10px' : '-=10px';
+
+            $this.animate({ left: distance }, 1000)
+                 .animate({ left: '4px' }, 1000);
+        });
+    }
+
+    // Appeler l'animation au chargement et de manière répétée
+    animateCards();
+    setInterval(animateCards, 1000); // Toutes les 4 secondes
+});
+</script>
+ <section class="testimonials">
+    <h3 class="display-6 fw-bolder text-primary3 text-center" style="font-family:Roboto;">Témoignages de Nos
+        Clients:</h3>
+    <br>
+    <div class="container text-center">
+        <div class="row">
+            <!-- Témoignage 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card shadow-sm p-4 rounded" style="background-color: gray;">
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <h5 class="client-name">Elon Mask ★★★★★</h5>
+                            <p class="feedback">"La possibilité de donner un avis en temps réel est excellente. Les
+                                améliorations basées sur les retours sont impressionnantes et éloquants.</br> Continuez comme ça!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Témoignage 2 -->
+            <div class="col-md-4  mb-4">
+                <div class="testimonial-card shadow-sm p-4 rounded" style="background-color: gray;">
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <h5 class="client-name">Mark Zuckerberg ★★★&#9734;&#9734;</h5>
+                            <p class="feedback">"Pouvoir laisser un avis en temps réel est une fonctionnalité fantastique. Les améliorations apportées grâce aux retours sont remarquables. Continuez sur cette lancée !"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4  mb-4">
+                <div class="testimonial-card shadow-sm p-4 rounded" style="background-color: gray;">
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <h5 class="client-name">Jean Martin ★★★★&#9734;</h5>
+                            <p class="feedback">"Pouvoir laisser un avis en temps réel est une fonctionnalité fantastique. Les améliorations apportées grâce aux retours sont remarquables. Continuez sur cette lancée !"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br>
+
+
+<!--Dernières Améliorations Basées sur Vos Feedbacks:
+ < -->
+ <section>
+    <h3 class="display-6 fw-bolder text-primary3 text-center" style="font-family: Roboto;">Dernières Améliorations Basées sur Vos Feedbacks:</h3>
+    <br>
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <!-- Utilisation d'une ligne avec justification du contenu au centre -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card h-100" style="background: linear-gradient(to bottom,  #05700575, #ffffff);">
+                    <div class="card-body">
+                        <h5 class="card-title">Amélioration de la Navigation</h5>
+                        <p class="card-text">À la suite de vos suggestions pour une navigation plus intuitive, nous avons revu et simplifié notre menu principal. Désormais, trouver les informations essentielles est plus rapide et plus facile, améliorant ainsi l'accessibilité et la convivialité de notre site.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card h-100" style="background: linear-gradient(to bottom, #05700575, #ffffff);">
+                    <div class="card-body">
+                        <h5 class="card-title">Nouvelles Fonctionnalités</h5>
+                        <p class="card-text">Vous avez exprimé le besoin d'une communication plus directe et instantanée avec notre équipe. C'est pourquoi nous avons introduit une fonction de chat en direct. Désormais, vous pouvez obtenir une assistance personnalisée et rapide en temps réel, renforçant ainsi notre engagement à vous offrir un service client de haute qualité.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">              <!--#e07676-->
+                <div class="card h-100" style="background: linear-gradient(to bottom, #05700575, #ffffff);">
+                    <div class="card-body">
+                        <h5 class="card-title">Optimisation Mobile</h5>
+                        <p class="card-text">Vos retours ont mis en lumière l'importance d'une expérience utilisateur fluide sur les appareils mobiles. En réponse, nous avons travaillé sur une optimisation complète de notre site pour les smartphones et tablettes. Cette amélioration garantit que vous pouvez accéder à notre plateforme de manière efficace et agréable, où que vous soyez.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br><br>
+
+    
+
+
+
+
+            <footer class="footer" style="  background-color: #333; color:  #fff;">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-md-4" style="font-family: cursive;">
+                            <h5 class="mb-4">Contact</h5>
+                            <p class="mb-2">
+                                MOROSOFT SOLUTIONS:Fédérateur stratégique de l'écosystème entrepreneurial innovant au Maroc.
+                                </p>
+                            <p class="mb-2">Téléphone : +123456789</p>
+                            <p class="mb-2">Email : contact@MOROSOFT.ma</p>
+                        </div>
+                        <div class="col-md-4"style="font-family: cursive;">
+                            <h5 class="mb-4">Liens Utiles</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
+                                <li><a href="../feedback/" class="text-white text-decoration-none">DONNER SON AVIS</a></li>
+                                <li><a href="../feedback/admin/" class="text-white text-decoration-none">ADMINISTRATION</a></li>
+                                <li><a href="../CHATBOT/chat.php" class="text-white text-decoration-none">SUPPORT CLIENT</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4" style="font-family: cursive;">
+                            <h5 class="mb-4">Suivez-nous sur:  </h5>
+                            <a href="https://web.facebook.com/morosoftpk/?locale=fr_FR&_rdc=1&_rdr" target="_blank">
+                                <i class="bi bi-facebook"></i> Facebook
+                              </a>
+                        </div> 
+                        
+                    </div>
+                </div>
+                <div class="text-center py-4" style="background-color: #333;color: #fff;">
+                    <p class="mb-0">&copy; 2024 MOROSOFT. Tous droits réservés.</p>
+                </div>
+              </footer>
+              
+
+
+   
+</body>
+
+</html>
