@@ -4,7 +4,7 @@ class DBController {
     private $host = "localhost";
     private $user = "root";
     private $password = "";
-    private $database = "feedback";
+    private $database = "sql7735507";
     
     private static $con;
     

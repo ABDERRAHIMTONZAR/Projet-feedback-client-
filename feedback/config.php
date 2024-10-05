@@ -3,7 +3,7 @@ ob_start(); //Turns on output buffering
 
 $timezone = date_default_timezone_set("Europe/London");
 
-$con = mysqli_connect("localhost", "root", "", "feedback"); //Connection variable
+$con = mysqli_connect("sql7.freesqldatabase.com", "sql7735507", "ycxKUijf7U", "sql7735507"); //Connection variable
 
 if(mysqli_connect_errno()) {
     echo "Failed to connect: " . mysqli_connect_errno();
